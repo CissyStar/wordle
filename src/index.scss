@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.App {
+  margin: 0 auto;
+}
+.words {
+  width: 280px;
+  height: 326px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.completed-row,
+.empty-row,
+.current-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 4px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  border: solid 2px grey;
+  margin: 2px;
+}
+
+.correct-letter {
+  background-color: green;
+}
+
+.correct-letter-wrong-position {
+  background-color: orange;
+}
+
+.key-incorrect {
+  background-color: grey;
+}
+
+.key-wrong-position {
+  background-color: orange;
+}
+
+.ket-correct {
+  background-color: green;
+}
