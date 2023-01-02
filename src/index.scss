@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -24,47 +26,87 @@ code {
 
 .App {
   margin: 0 auto;
-}
-.words {
-  width: 280px;
-  height: 326px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.completed-row,
-.empty-row,
-.current-row {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 4px;
+
+  .header {
+    width: 100vw;
+    border-bottom: solid 2px $key-bg;
+    margin-bottom: 20px;
+  }
+
+  .words {
+    width: 280px;
+    height: 326px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .completed-row,
+    .empty-row,
+    .current-row {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 4px;
+    }
+
+    .cell {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 40px;
+      border: solid 2px $key-bg;
+      margin: 2px;
+      font-weight: 600;
+    }
+
+    .correct-letter {
+      background-color: $correct-color;
+    }
+
+    .correct-letter-wrong-position {
+      background-color: $present-color;
+    }
+
+    .wrong-letter {
+      background-color: $wrong-color;
+    }
+  }
+
+  .key {
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    height: 58px;
+    background-color: $key-bg;
+    color: black;
+    margin: 3px;
+  }
+
+  .key-incorrect {
+    background-color: $wrong-color;
+  }
+
+  .key-wrong-position {
+    background-color: $present-color;
+  }
+
+  .key-correct {
+    background-color: $correct-color;
+  }
 }
 
-.cell {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 40px;
-  border: solid 2px grey;
-  margin: 2px;
+
+@media (max-width:480px) {
+  .key {
+    width: 33px;
+    padding: 0;
+  }
 }
 
-.correct-letter {
-  background-color: green;
+@media (min-width: 480px) {
+  .key {
+    width: 45px;
+  }
+  
 }
+  
 
-.correct-letter-wrong-position {
-  background-color: orange;
-}
-
-.key-incorrect {
-  background-color: grey;
-}
-
-.key-wrong-position {
-  background-color: orange;
-}
-
-.ket-correct {
-  background-color: green;
-}

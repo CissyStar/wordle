@@ -7,6 +7,8 @@ const CompletedRow = (props) => {
        return "correct-letter"
      } else if (props.setting.solution.includes(letter)) {
      return "correct-letter-wrong-position"
+   } else {
+    return "wrong-letter";
    }
    })
 
