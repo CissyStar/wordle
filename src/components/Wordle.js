@@ -52,6 +52,7 @@ const Wordle = () => {
       setCurrentGuess(currentGuess + event.target.value);
     }
   };
+
   const onDelete = () => {
     if (currentGuess.length > 0) {
       setCurrentGuess(currentGuess.slice(0, currentGuess.length - 1));
@@ -73,7 +74,6 @@ const Wordle = () => {
         }
       }
     });
-    console.log(keyClasses);
   };
 
   const onEnter = () => {
@@ -95,7 +95,7 @@ const Wordle = () => {
   };
 
   return (
-    <div className="wordle">
+    <div className="wordle" >
       <div className="header">
         <h1>Wordle</h1>
       </div>
