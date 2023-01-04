@@ -60,14 +60,17 @@ code {
 
     .correct-letter {
       background-color: $correct-color;
+      color: white;
     }
 
     .correct-letter-wrong-position {
       background-color: $present-color;
+      color: white;
     }
 
     .wrong-letter {
       background-color: $wrong-color;
+      color: white;
     }
   }
 
@@ -83,14 +86,17 @@ code {
 
   .key-incorrect {
     background-color: $wrong-color;
+    color: white;
   }
 
   .key-wrong-position {
     background-color: $present-color;
+    color: white;
   }
 
   .key-correct {
     background-color: $correct-color;
+    color: white;
   }
 }
 
